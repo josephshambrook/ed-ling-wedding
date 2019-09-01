@@ -3,5 +3,11 @@ body {
 }
 
 .layout {
-  display: grid;
+  text-align: center;
+}
+
+@supports (display: grid) {
+  .layout {
+    display: grid;
+  }
 }

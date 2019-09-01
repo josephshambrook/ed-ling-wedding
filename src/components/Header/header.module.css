@@ -1,0 +1,15 @@
+.header {
+  background-color: var(--color-tiffany-blue);
+  text-align: center;
+}
+
+.link {
+  color: white;
+  line-height: 2;
+  text-decoration: none;
+}
+
+.svg {
+  margin-bottom: 0;
+  width: 200px;
+}
