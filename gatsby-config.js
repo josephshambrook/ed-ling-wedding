@@ -1,7 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Edward & Ling - June 28th 2020`,
+    title: `Edward & Ling`,
     description: `The website to provide information for the wedding of Edward Shambrook and Ling Zhu in 2020.`,
+    names: `Edward & Ling`,
+    dateLongEn: `June 28th 2020`,
+    dateLongZh: `2020年6月28日`,
+    dateShort: `28-06-2020`,
     author: `josephshambrook`,
   },
   plugins: [
@@ -20,7 +24,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Edward and Ling - 28th June 2020`,
+        name: `Edward and Ling | 28th June 2020`,
         short_name: `Ed & Ling`,
         start_url: `/`,
         background_color: `#81d8d0`,

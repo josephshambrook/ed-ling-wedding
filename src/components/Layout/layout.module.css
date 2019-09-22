@@ -1,13 +1,24 @@
-body {
-  font-family: var(--font-plain);
-}
-
-.layout {
-  text-align: center;
-}
-
 @supports (display: grid) {
-  .layout {
+  .grid {
     display: grid;
+    grid-template-columns: [left-gutter] 1fr [content] 8fr [right-gutter] 1fr;
+    grid-template-rows: [header] 70px [body] 1fr [footer] 70px;
+    min-height: 100vh;
+  }
+
+  header {
+    grid-column: content;
+    grid-row: header;
+  }
+
+  main {
+    grid-column: content;
+    grid-row: body;
+  }
+
+  footer {
+    align-self: center;
+    grid-column: content;
+    grid-row: footer;
   }
 }
