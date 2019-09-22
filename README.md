@@ -1,5 +1,7 @@
 # Edward and Ling - Wedding Website
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6c68bc1a-68f2-4669-85d3-9abd760a15fc/deploy-status)](https://app.netlify.com/sites/ed-and-ling/deploys)
+
 This is a static, multilingual website I'm writing for my younger brother's wedding. Built with GatsbyJS, and deployed to Netlify.
 
 ## 🚀 Quick start

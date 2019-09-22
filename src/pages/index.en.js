@@ -1,15 +1,30 @@
 import React from "react"
-import { Link } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 
-import Layout from "../components/Layout/layout"
 import SEO from "../components/seo"
+import Layout from "../components/Layout/layout"
+import Intro from "../components/Intro/intro"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>English</h1>
-    <Link to="en/faq">Go to FAQ</Link>
-  </Layout>
-)
+const IndexPage = () => {
+  const data = useStaticQuery(graphql`
+    query SiteIntroQueryEn {
+      site {
+        siteMetadata {
+          dateLongEn
+        }
+      }
+    }
+  `)
+
+  return (
+    <Layout lang="en">
+      <SEO title="Home" />
+      <Intro>
+        <h1>Edward & Ling</h1>
+        <h2>{data.site.siteMetadata.dateLongEn}</h2>
+      </Intro>
+    </Layout>
+  )
+}
 
 export default IndexPage

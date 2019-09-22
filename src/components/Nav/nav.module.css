@@ -1,0 +1,31 @@
+.bar {
+  align-items: center;
+  background-color: var(--color-white);
+  color: #222;
+  display: flex;
+}
+
+.mainLink {
+  color: var(--color-black);
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-right: 1rem;
+  text-decoration: none;
+}
+
+.mainLink > * {
+  margin-bottom: 0;
+}
+
+.list {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0;
+}
+
+.list > li {
+  line-height: 1.1;
+  margin-bottom: 0;
+}

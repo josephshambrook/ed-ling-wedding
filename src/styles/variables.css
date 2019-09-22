@@ -26,5 +26,8 @@
       var(--ratio)
   );
 
-  --color-tiffany-blue: #81d8d0;
+  --color-blue: #81d8d0;
+  --color-red: #ff4136;
+  --color-white: #fff;
+  --color-black: #222;
 }

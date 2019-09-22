@@ -1,0 +1,21 @@
+.intro {
+  background-image: linear-gradient(to right, var(--color-blue), transparent),
+    url("../../images/ed_ling_06_bw.jpg");
+
+  background-position: left top 37%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+  padding: 1rem;
+}
+
+@media (min-width: 42rem) {
+  .intro {
+    padding: 2rem;
+  }
+}
