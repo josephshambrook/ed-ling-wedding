@@ -1,21 +1,28 @@
 .intro {
-  background-image: linear-gradient(to right, var(--color-blue), transparent),
-    url("../../images/ed_ling_06_bw.jpg");
-
-  background-position: left top 37%;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-
-  height: 100%;
-  padding: 1rem;
+  background-color: var(--color-blue);
+  padding: 5rem 1rem;
+  text-align: center;
 }
 
 @media (min-width: 42rem) {
   .intro {
+    background-image: linear-gradient(
+        to right,
+        var(--color-blue) 0%,
+        var(--color-blue) 20%,
+        transparent
+      ),
+      url("../../images/ed_ling_06_bw.jpg");
+
+    background-position: right 150% top 37%;
+    background-repeat: no-repeat;
+    background-size: 120%;
+
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     padding: 2rem;
+    text-align: left;
   }
 }

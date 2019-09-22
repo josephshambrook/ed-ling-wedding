@@ -1,6 +1,5 @@
 .bar {
   align-items: center;
-  background-color: var(--color-white);
   color: #222;
   display: flex;
 }
